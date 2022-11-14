@@ -11,5 +11,10 @@ public class Main {
                 new Dimension(1.5, 1, 0.1)
         );
 
+        MedioDeTransporte camionDeLosLunes = new MedioDeTransporte(
+                500.0,
+                new Dimension(3.0, 1.5, 6.0)
+        );
+
     }
 }
