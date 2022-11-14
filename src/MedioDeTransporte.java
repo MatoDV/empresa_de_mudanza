@@ -49,6 +49,7 @@ public class MedioDeTransporte {
 
     public void cargar(ObjetoTransportable objetoTransportable) {
         if (getObjetoTransportables().size()>=getCantidadMaxima())return;
+        if (getCapacidad()+objetoTransportable.getPeso()>=getCantidadMaxima())return;
         this.setCapacidad(getCapacidad()+objetoTransportable.getPeso());
         this.objetoTransportables.add(objetoTransportable);
     }
@@ -59,5 +60,13 @@ public class MedioDeTransporte {
 
     public void setCantidadMaxima(int cantidadMaxima) {
         this.cantidadMaxima = cantidadMaxima;
+    }
+    public String generarInventario(){
+        String inventario ="";
+        for (int i = 0; i <getObjetoTransportables().size() ; i++) {
+            String nombre=getObjetoTransportables().get(i).getNombre();
+            inventario+= nombre + "" + peso + "\n";
+        }
+        return inventario;
     }
 }

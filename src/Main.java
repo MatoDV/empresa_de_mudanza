@@ -26,5 +26,6 @@ public class Main {
 
         System.out.println(String.format("En el camion ahora hay %d,%f/%f",camionDeLosLunes.getCapacidad(),camionDeLosLunes.getCapacidadMaxima());
 
+
     }
 }
