@@ -16,5 +16,8 @@ public class Main {
                 new Dimension(3.0, 1.5, 6.0)
         );
 
+        camionDeLosLunes.cargar(primerSilla);
+        camionDeLosLunes.cargar(primerTelevisor);
+
     }
 }

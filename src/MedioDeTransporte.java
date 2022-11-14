@@ -44,4 +44,8 @@ public class MedioDeTransporte {
     public void setObjetoTransportables(ArrayList<ObjetoTransportable> objetoTransportables) {
         this.objetoTransportables = objetoTransportables;
     }
+
+    public void cargar(ObjetoTransportable objetoTransportable) {
+        this.objetoTransportables.add(objetoTransportable);
+    }
 }
